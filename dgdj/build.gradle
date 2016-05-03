@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "net.ezcx.dongguandaojia.business"
+        minSdkVersion 15
+        targetSdkVersion 17
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    productFlavors {
+    }
+    signingConfigs {
+        // your debug keystore
+        debug {
+            storeFile file('../dgdj.jks')
+            keyAlias 'dgdj_business'
+            keyPassword 'ezcx@2'
+            storePassword 'ezcx@2'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile 'com.prolificinteractive:material-calendarview:1.2.0'
+    compile project(':multi-image-selector')
+    compile project(':material-calendarview')
+    compile project(':social_sdk_library_project')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/jpush-android-2.0.6.jar')
+}
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+}

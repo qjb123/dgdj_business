@@ -1,0 +1,37 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="analysis_item_margin">0dp</dimen>
+    <dimen name="kit_icon_name_marginTop">3dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="item_margin_double">16dp</dimen>
+    <dimen name="icon_user_favicon_large">64dp</dimen>
+    <dimen name="icon_user_favicon_normal">40dp</dimen>
+    <dimen name="icon_large">48dp</dimen>
+    <dimen name="icon_larger">40dp</dimen>
+    <dimen name="icon_normal">24dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="card_margin_double">16dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="item_margin_half">4dp</dimen>
+    <dimen name="card_margin_half">4dp</dimen>
+    <dimen name="image_margin">8dp</dimen>
+
+    <dimen name="private_bar_to_border">25.0dp</dimen>
+
+    <dimen name="margin_left_right">16dp</dimen>
+    <dimen name="icon_item_margin">8dp</dimen>
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="smaller_txtsize">13px</dimen>
+    <dimen name="item_text">48dp</dimen>
+    <!-- zxf end -->
+    <!-- 字体 -->
+    <dimen name="font_size_hint">12sp</dimen>
+    <dimen name="font_size_main_body">14sp</dimen>
+    <dimen name="font_size_title_super">34sp</dimen>
+    <dimen name="font_size_title_large">24sp</dimen>
+    <dimen name="font_size_title_second">16sp</dimen>
+    <dimen name="font_size_app_bar">20sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
